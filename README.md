@@ -7,9 +7,9 @@ Author: **Praveen Mohan**
 ---
 
 ## Introduction
-*This project utilizes the abilities of Natural Language Processing (NLP) in building Unsupervised Sentiment Analysis model for analyzing the transcripts of some of the most popular US Presidential speeches in the history.*
-*In simple words NLP is a technique which is used to mine the raw text or transcript data to gather valuable information or to make sense out of the raw data. This project will help us understand how each president’s speech had an impact in the elections and among the people and also help us identify patterns, similarities and differences within each president’s speeches.*
-*The Sentiment Analysis is a technique that analyses the emotions involved in a transcript. It helps us identify the kinds of common emotions that each president uses and also helps us to understand the impact of various emotions among people.*
+* *This project utilizes the abilities of Natural Language Processing (NLP) in building Unsupervised Sentiment Analysis model for analyzing the transcripts of some of the most popular US Presidential speeches in the history.*
+* *In simple words NLP is a technique which is used to mine the raw text or transcript data to gather valuable information or to make sense out of the raw data. This project will help us understand how each president’s speech had an impact in the elections and among the people and also help us identify patterns, similarities and differences within each president’s speeches.*
+* *The Sentiment Analysis is a technique that analyses the emotions involved in a transcript. It helps us identify the kinds of common emotions that each president uses and also helps us to understand the impact of various emotions among people.*
 
 ---
 
