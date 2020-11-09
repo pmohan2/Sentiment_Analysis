@@ -50,31 +50,6 @@ Authors: **Praveen Mohan**
 ### Web Scrapping 
 * **`requests`**
 * **`BeautifulSoup`**
-```
-# Scrapes transcript data from The Miller Center webpage
-def url_to_transcript(url):
-    page = requests.get(url).text
-    soup = BeautifulSoup(page, "lxml")
-    text = [p.text for p in soup.find(class_="transcript-inner").find_all('p')]
-    print(url)
-    return text
-
-# URLs of transcripts of Presidents during State of the Union Address
-urls = ["https://millercenter.org/the-presidency/presidential-speeches/february-4-2020-state-union-address",
-        "https://millercenter.org/the-presidency/presidential-speeches/january-12-2016-2016-state-union-address",
-        "https://millercenter.org/the-presidency/presidential-speeches/january-28-2008-state-union-address",
-        "https://millercenter.org/the-presidency/presidential-speeches/january-27-2000-state-union-address",
-        "https://millercenter.org/the-presidency/presidential-speeches/january-25-1988-state-union-address",
-        "https://millercenter.org/the-presidency/presidential-speeches/january-23-1980-state-union-address",
-        "https://millercenter.org/the-presidency/presidential-speeches/january-14-1963-state-union-address",
-        "https://millercenter.org/the-presidency/presidential-speeches/january-7-1943-state-union-address"]
-
-# President names
-presidents = ["Trump", "Obama", "Bush", "Bill_Clinton", "Ronald_Reagan", "Jimmy_Carter", "JFK", "FDR" ]
-full_names = ["Bill_Clinton", "George_W.Bush", "Franklin_D.Roosevelt", "John_F.Kennedy", "Jimmy_Carter", "Barack_Obama", "Ronald_Reagan", "Donald_Trump"]
-# Scrapping the transcripts using the above defined function
-transcripts = [url_to_transcript(i) for i in urls]
-```
 
 ---
 
@@ -107,4 +82,40 @@ transcripts = [url_to_transcript(i) for i in urls]
 **A tag cloud (word cloud or wordle or weighted list in visual design) is a novelty visual representation of text data, typically used to depict keyword metadata (tags) on websites, or to visualize free form text. Tags are usually single words, and the importance of each tag is shown with font size and color.**
 
 ![Word Cloud](Images/viz1.jpeg)
+
+![Bar Plot](Images/viz2.jpeg)
+
+---
+
+## Sentiment Analysis
+
+1. **TextBlob Module:** Linguistic researchers have labeled the sentiment of words based on their domain expertise. Sentiment of words can vary based on where it is in a sentence. The TextBlob module allows us to take advantage of these labels.
+2. **Sentiment Labels:** Each word in a corpus is labeled in terms of polarity and subjectivity (there are more labels as well). A corpus' sentiment is the average of these.
+   * **Polarity**: How positive or negative a word is. -1 is very negative. +1 is very positive.
+   * **Subjectivity**: How subjective, or objective (opinionated) a word is. 0 is fact. +1 is very much an opinion.
+
+For more info on TextBlob [sentiment function](https://planspace.org/20150607-textblob_sentiment/).
+
+![Sentiment Analysis](Images/Sentiment_Analysis.jpeg)
+
+## Sentiment of Speeches Over Time
+
+* *The above results gives us the sentiment analysis of speech as a whole.*
+* *The below analysis is about the sentiment over time throughout each speeches for each President.*
+
+### Polarity trend for each President throughout their speeches.
+
+![Sentiment Analysis](Images/Polarity_Trend.jpeg)
+
+### Subjectivity trend for each President throughout their speeches.
+
+![Sentiment Analysis](Images/Subjectivity_Trend.jpeg)
+
+---
+
+
+
+
+
+
 
