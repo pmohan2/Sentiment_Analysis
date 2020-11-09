@@ -2,7 +2,7 @@
 
 Sentiment Analysis on US Presidential Speeches of State of the Union Address using NLP
 
-Authors: **Praveen Mohan**
+Author: **Praveen Mohan**
 
 ---
 
